@@ -236,7 +236,7 @@ class Page2:  # 第二页，给出初始配置建议
         self.create_form(fig)  # 将figure显示在tkinter窗体上面
         temp_date = trade_days[trade_days.index(self.startdate) - 1]
         time_text = tk.Label(self.frame_center,
-                             text=f"基于{temp_date}的省心温度计："
+                             text=f"基于{temp_date}的估值情况："
                                   f"{round(temp[temp['time'] == temp_date]['value'].iloc[0] * 100, 2)}%",
                              font=("微软雅黑", 14))
         time_text.pack(pady=0, side='right', expand=1, fill=tk.Y, anchor='se')
@@ -501,7 +501,7 @@ class Page4:  # 第四页，更新组合收益情况并给出最新配置建议
         self.net_value_canvas.draw()
         self.temp_text.configure(state="normal")
         self.temp_text.delete(0, tk.END)
-        self.temp_text.insert(tk.END, f"{self.show_date}的省心温度计："
+        self.temp_text.insert(tk.END, f"{self.show_date}的估值情况："
                                       f"{round(temp[temp['time'] == self.show_date]['value'].iloc[0] * 100, 2)}%" )
         self.temp_text.configure(state="disabled")
 
