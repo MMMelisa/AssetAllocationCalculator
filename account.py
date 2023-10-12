@@ -11,7 +11,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
-root = r'E:\工作\华泰证券-暑期\华泰金产\小组课题\code'
+root = r'.\小组课题\code'
 
 """
 1、输入：预期收益、最大回撤、定投金额（固定）、定投频率、预计可投资金额、单月消费（国家统计局：人均消费支出）——初始配置比例
