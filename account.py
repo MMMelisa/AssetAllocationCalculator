@@ -19,7 +19,7 @@ root = r'.\小组课题\code'
 3、来一大笔钱：
 4、取一小笔钱（从零钱宝取，低于零钱宝阈值）
 5、取一大笔钱：零钱宝取完，最小交易费用/止盈/等比例
-6、根据温度计确定定投量
+6、根据估值信号确定定投量
 8、和个人随便配的策略对比回测
 """
 
@@ -43,7 +43,7 @@ df = pd.read_excel(r"./data/权重对照表.xlsx", sheet_name=0)
 # days['calendarDate'] = pd.to_datetime(days['calendarDate'])
 # days['calendarDate'] = days['calendarDate'].apply(lambda x: x.strftime("%Y%m%d"))
 # days = days.rename(columns={'calendarDate': 'time'})
-# temp = pd.read_excel(root + r'\data\宽基指数估值温度计.xlsx', sheet_name=0, header=1)
+# temp = pd.read_excel(root + r'\data\宽基指数估值.xlsx', sheet_name=0, header=1)
 # temp = temp[['time', '399317.SZ']].rename(columns={'399317.SZ': 'value'})
 # temp['time'] = temp['time'].apply(lambda x: x.strftime("%Y%m%d"))
 # temp['value'] = temp['value'].shift(1)
